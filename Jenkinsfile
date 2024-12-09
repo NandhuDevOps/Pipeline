@@ -98,7 +98,9 @@ pipeline {
             }
         }
         stage('Email Notification'){
+            steps {
             emailext(body: 'Build Success', subject: 'Pipeline through Webhook build notification', to: 'nandhinineelakandan305@gmail.com')
+        }
         }
     }
 }
