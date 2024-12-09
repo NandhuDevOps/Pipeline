@@ -97,5 +97,8 @@ pipeline {
                 echo '10. The most effective way to control the permissions to the S3 buckets is by using bucket policies.'
             }
         }
+        stage('Email Notification'){
+            emailext(body: 'Build Success', subject: 'Pipeline through Webhook build notification', to: 'nandhinineelakandan305@gmail.com')
+        }
     }
 }
