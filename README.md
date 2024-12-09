@@ -1,2 +1,2 @@
 # Pipeline
-Changes made to trigger webhook.
+Pipeline job using webhook and mail notification.
